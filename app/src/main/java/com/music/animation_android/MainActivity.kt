@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity(),Animation.AnimationListener {
         Log.e("CITY:", "startAnimation")
         binding.btn.setOnClickListener(){
             binding.text.startAnimation(inAnimation)
+            binding.text.setText(binding.editText.text)
 
 
         }
